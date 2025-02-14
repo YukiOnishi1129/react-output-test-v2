@@ -5,15 +5,15 @@ import styles from "./style.module.css";
 
 export const TodoTemplate = () => {
   // カスタムフックから状態とロジックを呼び出してコンポーネントにあてがう
-  const [
-    { addInputValue, searchKeyword, showTodoList },
-    {
-      onChangeAddInputValue,
-      handleAddTodo,
-      handleDeleteTodo,
-      handleChangeSearchKeyword,
-    },
-  ] = useTodo();
+  const {
+    addInputValue,
+    searchKeyword,
+    showTodoList,
+    onChangeAddInputValue,
+    handleAddTodo,
+    handleDeleteTodo,
+    handleChangeSearchKeyword,
+  } = useTodo();
 
   return (
     <div className={styles.container}>
